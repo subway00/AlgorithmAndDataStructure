@@ -2,6 +2,8 @@ package algorithmAndDataStructure.doublyLinkedList;
 
 public class Node <T extends Comparable<T>>{
 	private T data;
+
+	//This is even more memory heavy than singly linked lists
 	private Node<T> previousNode;
 	private Node<T> nextNode;
 	

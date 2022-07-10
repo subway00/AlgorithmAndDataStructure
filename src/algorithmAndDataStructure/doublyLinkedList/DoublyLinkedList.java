@@ -7,14 +7,14 @@ public class DoublyLinkedList <T extends Comparable<T>>{
 	public void insert(T data) {
 		Node<T> newNode = new Node(data);
 		
-		//this is the first item in the doubly linked list
+		//This is the first item in the doubly linked list
 		if(tail == null) {
-			// both of the pointes are pointing to the new node
+			// Both of the pointes are pointing to the new node
 			head = new Node(data);
 			tail = new Node(data);
 		} else {
-			// we have to insert the new item to the end of the list
-			// we just have to manipulating the tail node and its reference in O(1)
+			// We have to insert the new item to the end of the list
+			// We just have to manipulate the tail node and its reference in O(1)
 			newNode.setPreviousNode(tail);
 			tail.setNextNode(newNode);
 			tail = newNode;
