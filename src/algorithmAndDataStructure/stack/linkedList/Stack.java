@@ -4,7 +4,8 @@ public class Stack <T>{
 	
 	private Node<T> head;
 	private int count;
-	
+
+	// O(1)
 	public void push(T data) {
 		count ++;
 		
@@ -17,7 +18,7 @@ public class Stack <T>{
 		}
 		
 	}
-	// remove the last item we have inserted O(1)
+	// Remove the last item we have inserted O(1)
 	public T pop() {
 		if (head == null) return null;
 		
@@ -26,6 +27,11 @@ public class Stack <T>{
 		count --;
 		return item;
 	}
+
+	public T peek() {
+		return head.getData();
+	}
+
 	// O(1)
 	public int size() {
 		return count;

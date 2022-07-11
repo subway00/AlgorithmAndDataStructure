@@ -8,7 +8,10 @@ public class App {
 		names.push("Adam");
 		names.push("Ana");
 		names.push("Kevin");
-		
+		names.push("Michael");
+
+		System.out.println(names.peek());
+
 		while (!names.isEmpty()) {
 			System.out.println(names.pop());
 		}
