@@ -14,7 +14,8 @@ public class Queue <T extends Comparable<T>>{
 		return this.count;
 	}
 	
-	//O(1)  insert item, because use lastNode to store so it can achieve constant time complexity 
+	// O(1) Insert item, because use lastNode to store so it can achieve constant time complexity
+	// Enqueue from the tail
 	public void enqueue(T newData) {
 		
 		this.count++;
@@ -30,7 +31,8 @@ public class Queue <T extends Comparable<T>>{
 		}
 	}
 	
-	//O(1) remove item
+	// O(1) remove item
+	// Dequeue from the head
 	public T dequeue() {
 		count --;
 		

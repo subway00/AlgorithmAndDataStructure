@@ -8,11 +8,11 @@ public class LinkedList <T extends Comparable<T>> implements List<T>{
 		if (rootNode == null) {
 			rootNode = new Node(data);
 		} else {
-			insertBegining(data);
+			insertBeginning(data);
 		}
 	}
 	// we just have to update the reference O(1)
-	private void insertBegining(T data) {
+	private void insertBeginning(T data) {
 		Node<T> newNode = new Node(data);
 		newNode.setNextNode(rootNode);
 		rootNode = newNode;
